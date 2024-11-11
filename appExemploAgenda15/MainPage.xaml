@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appExemploAgenda15.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+
+            <Label
+                Text="Teste: "
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Nome:"   
+            />
+
+            <Entry
+               x:Name="nome" 
+             />
+            
+            <Label
+                Text="Ano Nascimento:"   
+            />
+
+            <Entry
+               x:Name="idadecampo" 
+                Keyboard="Numeric"
+             />
+
+            <DatePicker  x:Name="dtNascimento"/>
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Enviar" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
